@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Page</title>
+<style type="text/css">
+    
+    #img{
+        float: left;
+        width: 200px;
+        margin: 1px;
+    }
+    #proflie{
+        float:left;
+        width: 200px;
+        margin: 20px;
+    }
+</style>
+</head>
+
+<body>
+{% block main %}
+
+<div id="img">
+    <img src="{{ url_for('static', filename='img/catlady.jpeg') }}">
+</div>
+<div id= "profile">
+<h1>My Profile</h1>
+<p><b>badgal Reds</b></p>
+
+<hr>
+
+<p>Today's Date: {{now}}</p>
+<hr>
+
+<p><b>Username:</b> Reds</p>
+<p><b>ID Number:</b> 620063723</p>
+<p><b>Age:</b> 23</p>
+<p><b>Gender:</b> Female</p>
+
+<hr>
+
+<p>I'm bad and boujee!!</p>
+</div>
+
+</body>
+</html>
+
+{% endblock %}
+

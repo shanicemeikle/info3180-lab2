@@ -1,0 +1,13 @@
+#profile{
+    border-style: inset;
+    height: 300px;
+    width: 400px;
+    float: right;
+}
+
+#img{
+    border-style: inset;
+    height: 300px;
+    width: 400px;
+    float: left;
+}
