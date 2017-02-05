@@ -6,14 +6,22 @@
 <style type="text/css">
     
     #img{
-        float: left;
-        width: 200px;
+        padding: 2px;
+        width: 320px;
         margin: 1px;
+        position: relative;
+        border-style:inset;
     }
     #proflie{
-        float:left;
+        padding: 10px;
         width: 200px;
         margin: 20px;
+    }
+    info{
+        width: 320px;
+        padding: 10px;
+        border-style: inset;
+        margin: 1px;
     }
 </style>
 </head>
@@ -21,26 +29,38 @@
 <body>
 {% block main %}
 
-<div id="img">
+<div id="img" style='float:left'>
     <img src="{{ url_for('static', filename='img/catlady.jpeg') }}">
 </div>
-<div id= "profile">
-<h1>My Profile</h1>
+<div id= "profile" style='float:right'>
+<div class="info">
 <p><b>badgal Reds</b></p>
-
+</div>
 <hr>
 
+<div class="info">
 <p>Today's Date: {{now}}</p>
+</div>
 <hr>
-
+<div class="info">
 <p><b>Username:</b> Reds</p>
+</div>
+
+<div class="info">
 <p><b>ID Number:</b> 620063723</p>
+</div>
+
+<div class="info">
 <p><b>Age:</b> 23</p>
 <p><b>Gender:</b> Female</p>
+</div>
 
 <hr>
 
+<div class="info">
 <p>I'm bad and boujee!!</p>
+</div>
+
 </div>
 
 </body>
